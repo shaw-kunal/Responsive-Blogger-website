@@ -1,0 +1,359 @@
+
+@import url('../css/font.css');
+html, body
+{
+    margin: 0%;
+    box-sizing:border-box;
+    overflow-x: hidden;
+        
+
+    
+}
+/* css varibel */
+
+
+:root{
+
+    /* theme font-family */
+    --Abel :'Abel',cursive;
+    --prism : 'prism',cursive;
+    --Anton :'Anton' ,cursive;
+    --josefin:'josefin',cursive;
+    --livvic:'livvic',cursive;
+
+    /* theme color variable */
+    --text-gray:#3f4954;
+    --text-light :#686666da;
+    --text-color :#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+    /* gradient color */
+    --warm-flame: linear-gradient(to right, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    --Night-Fade:linear-gradient(to left, #d9cdf5 0%, #fae7f5 50%);
+    --Spring-Warmth : linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    --Tempting-azure: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    --ripe-malinka: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    --cloudy-knoxvile: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    --morpheus-de: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    --Rare-wind:linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    --mars-party : linear-gradient(to top, #82a3df 0%, #9b23ea 100%);
+    --kind-steel : linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}    
+/* css varibel end */
+
+/* ---------global variable----- */
+a{
+    text-decoration: none;
+}
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+ul
+{
+    list-style-type: none;    
+}
+h1
+{
+    font-family: var(--josefin);
+
+}
+h3
+{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+   cursor: pointer ;
+    padding:1rem 3rem;
+}
+/* ---------global variable----- */
+/* -------------navbar ----------------- */
+
+.nav{
+
+    background: rgb(255, 255, 255);
+    padding: 0 2rem ;
+    height: 0rem;
+    min-height: 4rem ;
+    overflow :hidden;
+    transition: height 1s ease-in-out;
+    
+}
+.nav .nav-menu .toggle-collapse
+{
+    position: absolute;
+    top :2%;
+    width: 90%;
+    padding-left: 80%;
+    
+    display: none;
+    cursor: pointer;
+}
+.nav .toggle-collapse .toggle-icon
+{
+    display: flex;
+    justify-content: flex-end;
+    padding:1.4rem 0;
+    display: none;
+
+
+}
+
+.collapse 
+{
+    height:17rem;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color:var(--text-gray)
+}
+
+.nav .nav-brand a{
+
+    font-size: 1.6rem;
+    padding: 1rem 0 ;
+    display: block;
+    font-family: var(--josefin);
+    font-size: 1.6rem;
+
+}
+
+ 
+.nav .nav-menu 
+{
+   
+    justify-content: space-between;
+
+}
+.nav .nav-items
+{
+
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link
+{
+    padding: 1.6rem 1rem ;
+    font-size: 1rem 0;
+    font-family: var(--cloudy-knoxvile);
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+}
+
+.nav .nav-items .nav-link :hover
+{
+    /* background-color: var(--ripe-malinka); */
+    font-weight: bolder;
+    background: #30cfd0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.nav .social 
+{
+    padding :1.4rem 0rem;
+
+}
+.nav .social a
+{
+   
+    padding:0 .5rem;
+
+}
+
+nav .social .icon:hover
+{ 
+    background-color: #30cfd0;
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+   
+}
+/* view port is less than 750px */
+@media only screen and (max-width:750px)
+{  
+    .nav{
+        overflow: hidden;
+    }
+  
+    .nav .nav-menu , .nav .nav-menu .nav-items
+    {  
+        flex-direction: column;
+    }
+    
+    .nav .nav-menu .toggle-collapse
+    {
+        display:flex ;
+    }
+    .nav .nav-menu .nav-link
+    {
+        padding:0.5rem 0 ;
+        
+    }
+
+
+}
+
+@media only screen and (min-width:750px)
+{
+    .nav
+    { 
+        max-height: 4rem;
+
+    }
+}
+
+
+/* -------X------navbar ---------X-------- */
+
+
+
+/*------------------main content-------------------- */
+/* --------------------site tile--------------------- */
+
+main .site-title
+{
+    background-image: url("../assets/Background-image.png");
+    background-size: cover;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+main .site-title .site-background
+{
+    color: var(--white);
+    text-align: center;
+    
+    
+}
+main .site-title  .btn 
+{
+    margin: 1.8rem;
+    background:var(--Rare-wind);
+    
+}
+
+main .site-title .btn:hover
+{
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+/* ---------x-----------site tile------------X--------- */
+
+/* --------------blog carousel--------------------------- */
+main .blog
+{
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height:100vh ;
+    background-size: 65%;
+}
+main .blog .container
+{
+    /* padding-left: 10%;
+    width: 80%; */
+    margin :0 10vw;
+
+}
+
+main .blog .blog-post
+{
+    padding-top:6rem;
+}
+main .blog-post .blog-content
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     width: 80%;
+     margin: 3rem 2rem;
+     box-shadow: 0 15px 20px rgb(163, 162, 162);
+}
+
+main .blog-content .blog-title
+{
+    padding:2rem 0 ;
+}
+main .blog-content .btn-blog
+{padding:.7rem 2rem;
+    background: var(--mars-party);
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white);
+}
+  main .blog-content .btn-blog:hover
+
+{  
+    border: 2px solid black;
+    background: transparent;
+    color: black
+
+ }
+ main .blog-content span
+ {
+    display: block;
+    padding:1rem;
+ }
+section .container .owl-nav
+{
+    position: absolute;
+    top :0%;
+    margin:0 auto;
+    width: 100%;
+}
+
+.owl-theme .owl-nav .owl-nav-prev,
+.owl-theme .owl-nav .owl-nav-next
+{
+    color:var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+.owl-theme .owl-nav [class*='owl-']:hover
+{
+    outline: none;
+    background: transparent;
+    color: #0f0f0f;
+    
+
+}
+
+
+
+
+
+/* --------------blog carousel--------------------------- */
+/* =------------site ::content-------------------------------------- */
+section
+
+/* =------------site ::content-------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/*------------------main content-------------------- */
+
+/*-----------X-------main content--------X------------ */

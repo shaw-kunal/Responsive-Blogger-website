@@ -1,0 +1,30 @@
+
+/* font family :abel */
+@font-face {
+    font-family: Abel;
+    src: url('../gogglefont/Abel/Abel-Regular.ttf');
+}
+/* font family :antol*/
+
+@font-face {
+    font-family: Anton;
+    src: url('../gogglefont/Anton/Anton-Regular.ttf');
+}
+/* font family :josefin*/
+
+@font-face {
+    font-family: josefin;
+    src: url('../gogglefont/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+}
+/* font family : livvic*/
+
+@font-face {
+    font-family: livvic;
+    src: url('../gogglefont/Livvic/Livvic-Black.ttf');
+           }
+/* font family :prism*/
+
+@font-face {
+    font-family: prism;
+    src: url('../gogglefont/Tilt_Prism/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf');
+}
