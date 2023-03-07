@@ -449,6 +449,87 @@ main .post-content .post-title a{
 }
 
 
+.site-content .sidebar .popular-post
+{
+    margin-top: 4rem;
+
+}
+.site-content .sidebar .popular-post .post-info
+{  
+    position: absolute;
+    bottom: 0% !important;
+    position: absolute;
+    bottom: 0%;
+   padding-bottom: 1.2rem;
+
+}
+.site-content .sidebar .popular-post .post-image
+{   margin-top: 3rem;
+    padding: 1rem 1rem !important;
+}
+
+.site-content .sidebar .popular-post .post-info span
+{
+    margin-left:  0.19rem !important;
+  color: var(--white);
+  
+
+}
+.site-content .sidebar .popular-post .post-info span i{
+    color: rgb(255, 255, 255);
+}
+.site-content .sidebar .popular-post .post-title 
+{
+    padding: 0rem 1rem;
+    
+}
+
+.site-content .sidebar .popular-post .post-title a
+{
+    font-family: 'Times New Roman', Times, serif !important;
+    font-weight: 100 !important;
+    font-style: normal;
+    font-size: 1rem;
+    color: black;
+    
+}
+
+
+.site-content .sidebar .newsletter{
+    padding-top: 3rem;
+    margin-left: 4rem;
+}
+
+
+.site-content .sidebar .newsletter .form-letter .input-element{
+/* {   display: flex; */
+    width:80%;
+    height: 1.9rem;
+    border-radius: 4rem;
+    border: none;
+    background: var(--Tempting-azure);
+    width: 60%;
+    /* justify-content: center; */
+    outline: none;
+    padding: 0 1rem;
+
+}
+.site-content .sidebar .newsletter .form-letter  .form-btn
+{
+    padding: .3rem 1rem;
+    border-radius: 2px;
+    background-color: var(--sky);
+    margin: 1rem;
+    font-weight: 500;
+}
+.site-content .sidebar .newsletter .form-letter  .form-btn:hover
+{
+  filter: brightness(1.1);
+  border: 2px solid  black;
+
+}
+
+
 
 
 
