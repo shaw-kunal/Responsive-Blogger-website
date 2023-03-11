@@ -194,36 +194,6 @@ nav .social .icon:hover {
 
 }
 
-/* view port is less than 750px */
-@media only screen and (max-width:750px) {
-    .nav {
-        overflow: hidden;
-    }
-
-    .nav .nav-menu,
-    .nav .nav-menu .nav-items {
-        flex-direction: column;
-    }
-
-    .nav .nav-menu .toggle-collapse {
-        display: flex;
-    }
-
-    .nav .nav-menu .nav-link {
-        padding: 0.5rem 0;
-
-    }
-
-
-}
-
-@media only screen and (min-width:750px) {
-    .nav {
-        max-height: 4rem;
-
-    }
-}
-
 
 /* -------X------navbar ---------X-------- */
 
@@ -496,8 +466,8 @@ main .post-content .post-title a{
 
 
 .site-content .sidebar .newsletter{
-    padding-top: 3rem;
-    margin-left: 4rem;
+    padding-top: 11rem;
+    margin-left: 4rem;;
 }
 
 
@@ -505,7 +475,7 @@ main .post-content .post-title a{
 /* {   display: flex; */
     width:80%;
     height: 1.9rem;
-    border-radius: 4rem;
+    border-radius: 2px;
     border: none;
     background: var(--Tempting-azure);
     width: 60%;
@@ -529,11 +499,17 @@ main .post-content .post-title a{
 
 }
 
-
-
-
-
-
+.site-content .sidebar .popular-tags
+{
+    padding: 4rem;
+}
+.site-content .sidebar .popular-tags .tag
+{
+    margin: 4px;
+    background: var(--sky);
+    border-radius: 2rem;
+    padding: 5px 15px;
+}
 
 
 /* -------------------X-----------sdie bar------------X--------- */
@@ -543,6 +519,162 @@ main .post-content .post-title a{
 
 
 
-/*------------------main content-------------------- */
 
 /*-----------X-------main content--------X------------ */
+
+/* ===================footer ======================== */
+ footer.footer
+{
+background: black;
+}
+footer.footer .container 
+{
+    display: grid;
+    grid-template-columns:  repeat(4,1fr);
+}
+footer.footer .container  > div 
+{
+    flex-grow:  1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container  h2
+{
+    color: var(--white);
+}
+
+footer.footer .newsletter .form-element
+{
+     display:  inline-block;
+}
+footer.footer .newsletter .form-element input
+{
+    padding: .5rem .7rem;
+    outline:  none;
+    border: none;
+    font-size:1rem ;
+    width: 75%;
+    
+}
+footer.footer .newsletter .form-element  span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+    
+}
+
+footer.footer .instagram div>img
+{   display: inline-block;
+     width: 25%;
+     height: 50%;
+     margin: .3rem .4rem; 
+     
+}
+footer.footer .follow
+{
+    justify-content: center;
+}
+
+footer.footer .follow div i{
+
+    color: var(--white);
+    padding: 0.4rem;
+
+}
+
+footer.footer .right 
+{
+    justify-content: center;
+
+}
+ 
+footer.footer .move_up
+{   position: absolute;
+    right: 6%;
+    
+
+    
+
+}
+footer.footer .move_up span{
+    color: var(--midnight);
+}
+
+
+footer.footer .move_up span:hover
+{
+    color: white;
+}
+
+
+
+
+
+
+ 
+
+/* ===================footer ======================== */
+
+/* viewport less than or equal to 1103  */
+@media only screen and (max-width:1130px) 
+{
+    main .site-content .posts .post-content .post-image .post-info
+    {
+        left:2rem !important;
+        bottom:  1.2rem !important;
+        border-radius: 0% !important;
+    }
+    .site-content .sidebar .popular-post .post-info
+    {
+        display: none !important;
+    }
+    footer.footer .container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+
+/* view port is less than 750px */
+@media only screen and (max-width:750px) {
+    .nav {
+        overflow: hidden;
+    }
+
+    .nav .nav-menu,
+    .nav .nav-menu .nav-items {
+        flex-direction: column;
+    }
+
+    .nav .nav-menu .toggle-collapse {
+        display: flex;
+    }
+
+    .nav .nav-menu .nav-link {
+        padding: 0.5rem 0;
+
+    }
+
+
+  main .site-content 
+  {
+    grid-template-columns: 100%;
+  }
+  footer.footer .container
+  {
+      grid-template-columns: repeat(1,1fr);
+  }
+
+
+}
+
+@media only screen and (min-width:750px) {
+    .nav {
+        max-height: 4rem;
+
+    }
+}
